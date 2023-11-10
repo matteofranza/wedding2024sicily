@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 from streamlit_folium import folium_static
 import folium
 from folium.features import CustomIcon
@@ -49,11 +50,13 @@ m = folium.Map(
 map_width, map_height = 500, 300
 
 
-
-
 def add_custom_icon_marker(location, icon_path, popup_text):
+    # Check if the file exists
+    if not os.path.isfile(icon_path):
+        raise FileNotFoundError(f"The icon at path {icon_path} was not found.")
+
     custom_icon = CustomIcon(
-        icon_path,
+        icon_image=icon_path,
         icon_size=(30, 30),  # Size of the icon image (width, height)
     )
     folium.Marker(
@@ -63,11 +66,13 @@ def add_custom_icon_marker(location, icon_path, popup_text):
     ).add_to(m)
 
 # List of locations, icon paths, and popups
+
+icons_directory = os.path.join(os.getcwd(), 'icons')
 icons_info = [
-    {'location': [37.46678, 15.0664], 'icon_path': 'icons/airport.png', 'popup_text': 'Catania-Fontanarossa Airport'},
-    {'location': [37.070339538444806, 14.649711615950432], 'icon_path': 'icons/wedding.png', 'popup_text': 'Villa Fegotto'},
-    {'location': [36.919911618944, 14.70805545783845], 'icon_path': 'icons/city.png', 'popup_text': 'Ragusa'},
-    {'location': [36.78651754572091, 14.556379583430562], 'icon_path': 'icons/city.png', 'popup_text': 'Marina di Ragusa'}
+    {'location': [37.46678, 15.0664], 'icon_path': os.path.join(icons_directory, 'airport.png'), 'popup_text': 'Catania-Fontanarossa Airport'},
+    {'location': [37.070339538444806, 14.649711615950432], 'icon_path': os.path.join(icons_directory, 'airport.png'), 'popup_text': 'Villa Fegotto'},
+    {'location': [36.919911618944, 14.70805545783845], 'icon_path': os.path.join(icons_directory, 'airport.png'), 'popup_text': 'Ragusa'},
+    {'location': [36.78651754572091, 14.556379583430562], 'icon_path': os.path.join(icons_directory, 'airport.png'), 'popup_text': 'Marina di Ragusa'}
 ]
 
 for icon_info in icons_info:
