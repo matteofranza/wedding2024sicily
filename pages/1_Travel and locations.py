@@ -70,9 +70,9 @@ def add_custom_icon_marker(location, icon_path, popup_text):
 icons_directory = os.path.join(os.getcwd(), 'icons')
 icons_info = [
     {'location': [37.46678, 15.0664], 'icon_path': os.path.join(icons_directory, 'airport.png'), 'popup_text': 'Catania-Fontanarossa Airport'},
-    {'location': [37.070339538444806, 14.649711615950432], 'icon_path': os.path.join(icons_directory, 'airport.png'), 'popup_text': 'Villa Fegotto'},
-    {'location': [36.919911618944, 14.70805545783845], 'icon_path': os.path.join(icons_directory, 'airport.png'), 'popup_text': 'Ragusa'},
-    {'location': [36.78651754572091, 14.556379583430562], 'icon_path': os.path.join(icons_directory, 'airport.png'), 'popup_text': 'Marina di Ragusa'}
+    {'location': [37.070339538444806, 14.649711615950432], 'icon_path': os.path.join(icons_directory, 'wedding.png'), 'popup_text': 'Villa Fegotto'},
+    {'location': [36.919911618944, 14.70805545783845], 'icon_path': os.path.join(icons_directory, 'city.png'), 'popup_text': 'Ragusa'},
+    {'location': [36.78651754572091, 14.556379583430562], 'icon_path': os.path.join(icons_directory, 'city.png'), 'popup_text': 'Marina di Ragusa'}
 ]
 
 for icon_info in icons_info:
