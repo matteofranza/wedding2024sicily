@@ -16,16 +16,14 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown("<h1 style='text-align: center'> Sistemazioni </h1>", unsafe_allow_html=True)
 
 st.markdown("""
-Visto il numero di person che ci raggiungera' da fuori della Sicilia, e delle varie esigenze individuali, non ci siamo sentiti di prenderci la responsabilita' di organizzare una sistemazione di gruppo. 
-Infatti ci aspettiamo che molti di voi possano passare piu' tempo in sicilia prima e dopo l'evento.
-Considerando che sara' alta stagione, vi consigliamo di cominciare a cerca sin da ora e tentare di prenotare entro l'anno nuovo.
-Detto questo le piattoforme di pernottamento consigliate sono quelle classiche 
-(
-            [airbnb](https://www.airbnb.com/),
-            [booking](https://www.booking.com/index.it.html?aid=397594&label=gog235jc-1DCAEoggI46AdIM1gDaCyIAQGYARS4ARfIAQzYAQPoAQGIAgGoAgO4AsfYtaoGwAIB0gIkMWJkYmJjMDEtNDE2ZC00ZDdmLTlmZDYtY2MxNzg2ZThjZGZj2AIE4AIB&sid=0c9cc786cb4b9dbfe28a52fd0b89a5d3&keep_landing=1&sb_price_type=total&),
-            [campeggio](https://www.campingbaiadelsole.it/)) piu' i vari Hotel presenti sul luogo.
-Spulciando le varie soluzioni vi possiamo suggerire di organizzarvi in gruppi per trovare sistemazioni piu' convenienti.
-
-Non esistate a contattarci per ogni domanda e dubbio prima di confermare le prenotazioni
-
-""", unsafe_allow_html=False)
+    <style>
+    .justify-text {
+        text-align: justify;
+    }
+    </style>
+    <div class="justify-text">
+    Visto l’alto numero di amici e familiari che ci raggiungerà da fuori Sicilia, e visto le diverse esigenze individuali, abbiamo deciso di non occuparci direttamente della vostra sistemazione (speriamo sappiate comprendere la situazione ;)). Come già detto, luglio sarà alta stagione, quindi vi consigliamo caldamente di cominciare a cercare e prenotare un posto per la vostra sistemazione. Al momento, ci sono ancora svariate opzioni economiche, soprattutto se vi organizzate in gruppo.<br> 
+    Le piattaforme di prenotazione consigliate sono quelle classiche ([AirBnB](https://www.airbnb.com/), [Booking](https://www.booking.com/index.it.html?aid=397594&label=gog235jc-1DCAEoggI46AdIM1gDaCyIAQGYARS4ARfIAQzYAQPoAQGIAgGoAgO4AsfYtaoGwAIB0gIkMWJkYmJjMDEtNDE2ZC00ZDdmLTlmZDYtY2MxNzg2ZThjZGZj2AIE4AIB&sid=0c9cc786cb4b9dbfe28a52fd0b89a5d3&keep_landing=1&sb_price_type=total&), [campeggio](https://www.campingbaiadelsole.it/))), più i vari Hotel presenti sul posto.<br>
+    Non esitate a contattarci per ogni domanda e dubbio prima di confermare le prenotazioni.
+    </div>
+    """, unsafe_allow_html=True)
