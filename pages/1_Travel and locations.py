@@ -85,18 +85,39 @@ with col2:
     folium_static(m, width=map_width, height=map_height)
 
 st.markdown("""
-Aeroporto Catania - Fontanarossa : questo è l'aeroporto relativamente piu' vicino a Ragusa. Potrebbero esserci periodi dell'anno che, in base al vostro punto di partenza, potrebbero esserci dei voli per Comiso che è effettivamente piu' vicino a Ragusa. 
-Tuttavia la maggior parte di voi approdera' in terra sicula tramite Catania. Una volta giunti a Catania, se non avete intenzioni di affittare un'automobile, 
-troverete potrete optare per il servizio di bus is [Etnatraporti](https://www.etnatrasporti.it/). I Biglietti sono acquistabili dal sito oppure direttamente sul posto al chioso all'uscita dell'aerporto. Il tragitto fino a Ragusa dura circa 2h (eh, lo so... non ditelo a me), 2h20 per Marina di Ragusa.
-Se la vostra destinazione è Marina di Ragusa assicuratevi che il bus includa la fermata, potrebbe essere necessario un cambio a Ragusa
-""", unsafe_allow_html=False)
+    <style>
+    .justify-text {
+        text-align: justify;
+    }
+    </style>
+    <div class="justify-text">
+    <strong>Aeroporto di Catania - Fontanarossa:</strong> questo è l'aeroporto dove, molto probabilmente, la maggior parte di voi atterrerà. È possibile che ci siano periodi dell'anno in cui, in base al vostro punto di partenza, potrebbero esserci dei voli con destinazione Aeroporto di Comiso, che è un piccolo aeroporto vicinissimo a Ragusa. Quindi, prima di prenotare, assicuratevi quale collegamento esiste con il vostro aeroporto di partenza.<br>
+    Per chi atterrerà a Catania, se non avete intenzioni di affittare un'automobile, potrete optare per il servizio di bus Etnatraporti che, con un viaggio pittoresco tra fico pala, muretti a secco e munnizza, vi porterà a Ragusa e Marina di Ragusa. I biglietti sono acquistabili sul sito oppure direttamente alla biglietteria all'uscita dell'aeroporto (Chiosco Etnatrasporti).<br>
+    C’è un bus con destinazione Ragusa ad ogni ora (Durata: 1h45). Tuttavia, dall’aeroporto i bus per Marina di Ragusa sono molto più saltuari (4 corse al giorno, durata: 2h20), quindi controllate gli orari sul sito oppure chiedete in biglietteria se e quando passa il bus per Marina di Ragusa. In ogni caso, dalla stazione di Ragusa partono dei bus per Marina di Ragusa ad ogni ora.
+    </div>
+    """, unsafe_allow_html=True)
+
 
 st.markdown("""
-Ragusa e Marina di Ragusa : queste sono le 2 destinazioni suggerite per la vostra villeggiatura. Ovviamente potete scegliere in base alle vostre tenendo in considerazione che la posizione dei mezzi di trasporto. 
-""", unsafe_allow_html=False)
+    <style>
+    .justify-text {
+        text-align: justify;
+    }
+    </style>
+    <div class="justify-text">
+    <strong>Marina di Ragusa e Ragusa:</strong> queste sono le due destinazioni che vi suggeriamo per la vostra villeggiatura. Se preferite il mare (le spiagge sono tutte libere con qualche chalet sparso qua e la), Marina di Ragusa è il vostro posto (sarà alta stagione, quindi affrettatevi a prenotare l’alloggio prima che vada tutto a ruba!). Se preferite la città, allora cercate a Ragusa, tenendo in considerazione che dista 15 min di macchina da Marina di Ragusa e dal quale partono ad ogni ora bus per il mare. 
+    </div>
+    """, unsafe_allow_html=True)
+
 
 st.markdown("""
-Villa Fegotto : sara' la sede del "grande giorno". [Qui ](https://www.etnatrasporti.it/) potete cominciare a farvi un'idea. 
-Se siete interessati alla storia del luogo potete favela raccontare da Alberto Angela [qui ](https://www.facebook.com/SquiseatingVillaFegotto/videos/villa-fegotto-a-ulisse-il-piacere-della-scoperta/770288190120868/).
-Come avrete capito, Villa Fegotto non è vicinissima a Ragusa ma dista circa 30 minuti da Ragusa. Un servizio di bus vi verra' messo a disposizione personalmente da noi per l'evento (vedi sezione Wedding day)
-""", unsafe_allow_html=False)
+    <style>
+    .justify-text {
+        text-align: justify;
+    }
+    </style>
+    <div class="justify-text">
+    <strong>Villa Fegotto:</strong> sarà la sede del nostro sposalizio. Qui potete cominciare a farvi un'idea del posto. Se siete interessati alla storia della villa, potete farvela raccontare direttamente da quel figo di Alberto Angela qui. Come avrete capito, Villa Fegotto non è vicinissima a Ragusa ma dista circa 30 minuti. Non preoccupatevi, data la distanza e l’open bar, vi metteremo a disposizione un servizio di bus gratuito per l'evento (vedi sezione <strong>Wedding day</strong>).
+    </div>
+    """, unsafe_allow_html=True)
+
