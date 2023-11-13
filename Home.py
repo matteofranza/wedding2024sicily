@@ -26,8 +26,15 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 st.markdown("""
-Eccoci qui! Ne avrete sentito parlare ma l'estate prossima visiterete la Sicilia per partecipare al nostro matrimonio.
-Questa app ha il solo scopo di fornivi una panoramica dell'organizzazione dell'evento per aiutarvi a pianificare il vostro viaggio. Il vero sito web vi verra' svelato con la consegna delle
-partecipazioni (febbraio/marzo 2024).
-Per cominciare potete selezionare l'area di interesse sulla sinistra. Ovviamente sentitve liberi di contattarci privatamente per ogni esigenza.  
-""", unsafe_allow_html=False)
+    <style>
+    .justify-text {
+        text-align: justify;
+    }
+    </style>
+    <div class="justify-text">
+        Eccoci qui! È arrivato QUEL giorno: il 21 Luglio 2024 ci sposiamo e voi tutti siete invitati a raggiungerci in Sicilia per fare <strong>FESTA!!!</strong><br>
+        Quest’ app ha il solo scopo di fornirvi una panoramica dell'organizzazione dell'evento così da permettervi, per chi lo volesse, di pianificare con anticipo il vostro viaggio. Il sito web ufficiale vi verrà svelato con la consegna delle partecipazioni (Febbraio/Marzo 2024). 
+        Nella tendina in alto a sinistra troverete le varie sezioni con le informazioni su: viaggio, alloggio e giorno del matrimonio.<br>
+        Per qualunque dubbio, sentitevi liberi di contattarci su Whatsapp o via email.
+    </div>
+    """, unsafe_allow_html=True)
