@@ -100,20 +100,6 @@ with col2:
 
 
 
-
-st.markdown("""
-    <style>
-    .justify-text {
-        text-align: justify;
-    }
-    </style>
-    <div class="justify-text">
-    <b>Aeroporto di Catania - Fontanarossa:</b> questo è l'aeroporto dove, molto probabilmente, la maggior parte di voi atterrerà. È possibile che ci siano periodi dell'anno in cui, in base al vostro punto di partenza, potrebbero esserci dei voli con destinazione Aeroporto di Comiso, che è un piccolo aeroporto vicinissimo a Ragusa. Quindi, prima di prenotare, assicuratevi quale collegamento esiste con il vostro aeroporto di partenza.<br>
-    Per chi atterrerà a Catania, se non avete intenzioni di affittare un'automobile, potrete optare per il servizio di bus Etnatraporti che, con un viaggio pittoresco tra fico pala, muretti a secco e munnizza, vi porterà a Ragusa e Marina di Ragusa. I biglietti sono acquistabili sul sito oppure direttamente alla biglietteria all'uscita dell'aeroporto (Chiosco Etnatrasporti).<br>
-    C’è un bus con destinazione Ragusa ad ogni ora (Durata: 1h45). Tuttavia, dall’aeroporto i bus per Marina di Ragusa sono molto più saltuari (4 corse al giorno, durata: 2h20), quindi controllate gli orari sul sito oppure chiedete in biglietteria se e quando passa il bus per Marina di Ragusa. In ogni caso, dalla stazione di Ragusa partono dei bus per Marina di Ragusa ad ogni ora.
-    </div>
-    """, unsafe_allow_html=True)
-
 if language_selection == "ITA":
     st.markdown("""
     <style>
