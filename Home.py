@@ -52,7 +52,7 @@ if language_selection == "ENG":
                 </style>
                 <div class="justify-text">
                 Here we are! <b>THAT</b> day has come: we’re getting married on the <b>21st of July 2024</b> and you all are invited to Sicily to <b>PARTY</b>!!!<br>
-                This app will provide you with general information about the event so that, for those who want, you can plan in advance your trip. <br> 
+                This app will provide you with general information about the event so that, for those who want, you can plan in advance your trip. The official website will be released at a later stage with the official invitations (February/March 2024).
                 On the window up on the left, you’ll find different sections with information about: travel, accommodations, and the wedding day. <br>
                 If you have any doubt, please do not hesitate to contact us on Whatsapp or via email 
 
