@@ -15,6 +15,9 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 ######################################################################
 ######################################################################
+
+language_selection = st.sidebar.selectbox("Change language", ["ITA", "ENG"], index=0)
+
 st.markdown("""
     <style>
     .centered-text {
@@ -24,18 +27,29 @@ st.markdown("""
     <h1 class="centered-text">Travel and locations</h1>
     """, unsafe_allow_html=True)
 
+if language_selection == "ITA":
+            st.markdown("""
+            <style>
+            .justify-text {
+            text-align: justify;
+            }
+            </style>
+            <div class="justify-text">
+            Vi starete chiedendo: ma dove diavolo bisogna andare? Come ci arrivo? Non preoccupatevi, qui sotto cercheremo di spiegarvi tutto, anche con l’aiuto di una cartina.
+            </div>
+            """, unsafe_allow_html=True)
 
-st.markdown("""
-    <style>
-    .justify-text {
-        text-align: justify;
-    }
-    </style>
-    <div class="justify-text">
-    Vi starete chiedendo: ma dove diavolo bisogna andare? Come ci arrivo? Non preoccupatevi, qui sotto cercheremo di spiegarvi tutto, anche con l’aiuto di una cartina.
-    </div>
-    """, unsafe_allow_html=True)
-
+if language_selection == "ENG":
+            st.markdown("""
+            <style>
+            .justify-text {
+            text-align: justify;
+            }
+            </style>
+            <div class="justify-text">
+            You might wonder: where in hell should I go? How do I reach the place? Don’t worry, here we’ll explain everything, with a little help from the map.
+            </div>
+            """, unsafe_allow_html=True)
 
 
 sicily_bounds = [
@@ -85,7 +99,6 @@ with col2:
     folium_static(m, width=map_width, height=map_height)
 
 
-language_selection = st.sidebar.selectbox("Change language", ["ITA", "ENG"], index=0)
 
 
 st.markdown("""
@@ -108,9 +121,7 @@ if language_selection == "ITA":
         text-align: justify;
     }
     </style>
-    <div class="justify-text">
-    Vi starete chiedendo: ma dove diavolo bisogna andare? Come ci arrivo? Non preoccupatevi, qui sotto cercheremo di spiegarvi tutto, anche con l’aiuto di una cartina.<br>
-                
+    <div class="justify-text">                
     <b>Aeroporto di Catania - Fontanarossa:</b> questo è l'aeroporto dove, molto probabilmente, la maggior parte di voi atterrerà. È possibile che ci siano periodi dell'anno in cui, in base al vostro punto di partenza, potrebbero esserci dei voli con destinazione Aeroporto di Comiso, che è un piccolo aeroporto vicinissimo a Ragusa. Quindi, prima di prenotare, assicuratevi quale collegamento esiste con il vostro aeroporto di partenza **. 
     Per chi atterrerà a Catania, se non avete intenzioni di affittare un'automobile, potrete optare per il servizio di bus Etnatraporti che, con un viaggio pittoresco tra fico pala, muretti a secco e munnizza, vi porterà a Ragusa e Marina di Ragusa. I biglietti sono acquistabili sul sito oppure direttamente alla biglietteria all'uscita dell'aeroporto (Chiosco Etnatrasporti).
     C’è un bus con destinazione Ragusa ad ogni ora (Durata: 1h45). Tuttavia, dall’aeroporto i bus per Marina di Ragusa sono molto più saltuari (4 corse al giorno, durata: 2h20), quindi controllate gli orari sul sito oppure chiedete in biglietteria se e quando passa il bus per Marina di Ragusa. In ogni caso, dalla stazione di Ragusa partono dei bus per Marina di Ragusa ad ogni ora. <br>
@@ -132,7 +143,6 @@ if language_selection == "ENG":
     }
     </style>
     <div class="justify-text">
-    You might wonder: where in hell should I go? How do I reach the place? Don’t worry, here we’ll explain everything, with a little help from the map.<br>
     
     <b>Catania- Fontanarossa Airport:</b> this is the airport where probably most of you will land in. There might be periods during the year in which, based on the airport you’ll fly from, there might be flights to Comiso Airport, which is a very small airport very close to Ragusa. So, before booking, check which connections are available with your departure airport.
     For those who will land in Catania, if you don’t want to rent a car, you can use the bus service Etnatrasporti that, with a picturesque journey among prickly pear, dry stone walls and trash, will take you to Ragusa and Marina di Ragusa. Tickets are purchasable online or at the ticket kiosk right outside the airport (Kiosk Etnatrasporti).
