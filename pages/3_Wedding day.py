@@ -15,6 +15,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 ######################################################################
 language_selection = st.sidebar.selectbox("Change language", ["ITA", "ENG"], index=0)
 
+st.markdown("<h1 style='text-align: center'> Wedding day </h1>", unsafe_allow_html=True)
 
 
 if language_selection == "ITA":
