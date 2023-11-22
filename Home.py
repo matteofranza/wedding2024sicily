@@ -40,7 +40,6 @@ if language_selection == "ITA":
                 Quest’ app ha il solo scopo di fornirvi una panoramica dell'organizzazione dell'evento così da permettervi, per chi lo volesse, di pianificare con anticipo il vostro viaggio. Il sito web ufficiale vi verrà svelato con la consegna delle partecipazioni (Febbraio/Marzo 2024). 
                 Nella tendina in alto a sinistra troverete le varie sezioni con le informazioni su: viaggio, alloggio e giorno del matrimonio.<br>
                 Per qualunque dubbio, sentitevi liberi di contattarci su Whatsapp o via email.
-                </div>
                 """, unsafe_allow_html=True)
     
 if language_selection == "ENG":
